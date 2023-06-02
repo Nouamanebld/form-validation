@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <form action="get" novalidate>
+        <label for="email">Email:
+            <input type="email" name="email" id="email" required>
+            <span class="error"></span>
+        </label>
+        <label for="zip-code">Zip Code:
+            <input type="text" name="zip-code" id="zip-code" required>
+            <span class="error"></span>
+            <select name="zip" id="zip" required>
+                <optgroup label="Country">Country
+                    <option value="Morocco">Morocco</option>
+                    <option value="France">France</option>
+                    <option value="Switzerland">Switzerland</option>
+                    <option value="America">America</option>
+                </optgroup>
+            </select>
+        </label>
+        <label for="password">Password:
+            <input type="password" id="password" minlength="8" required>
+            <span class="error"></span>
+        </label>
+        <label for="conf-pass">Confirm Password:
+            <input type="password" id="conf-pass" required>
+            <span class="error"></span>
+        </label>
+        <input class="submit" type="submit" value="Submit">
+    </form>
+</body>
+</html>
