@@ -1,0 +1,46 @@
+form {
+    display: grid;
+    grid-template-columns: 2;
+    width: 200px;
+    gap: 15px;
+}
+
+label {
+    width: 200px;
+}
+
+select {
+    position: absolute;
+    margin-left: 10px;
+}
+
+.submit {
+    width: 80px;
+    height: 20px;
+    margin: 0 auto;
+}
+
+input:invalid {
+    border-color: #900;
+    background-color: #fdd;
+}
+
+input:focus:invalid {
+    outline: none; 
+}
+
+.error {
+    width: 100%;
+    padding: 0;
+
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+
+    box-sizing: border-box;
+}
+
+.error.active {
+    padding: 0.3em;
+}
